@@ -1,0 +1,20 @@
+$primary: #727cf5;
+// $primary: red;
+// Bootstrap Import
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss"; //S.O.B -->dont use @import url() :) instead use import ""
+
+// @import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
+
+// Home Css Import
+
+@import url(../Page/Home/Home.scss);
+@import "../Page/DashboardGroup/Analytics/Styles/Analytics";
+@import "../Page/DashboardGroup/Projects/Styles/Projects";
+@import "../Page/DashboardGroup/E-Wallet/Styles/EWallet";
+
+.na {
+  background-color: black;
+}
+
+//boorstrap data
+@import "./boootstrap-edit";

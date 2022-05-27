@@ -1,0 +1,44 @@
+// Temporary
+body {
+  //   color: #1d1d1f !important;
+}
+.form-control {
+  background-color: #fff;
+  background-color: var(--ct-body-sc-bg) !important;
+  border: 1px solid var(--ct-body-sc-bg) !important;
+  color: var(--ct-color-font);
+}
+.card {
+  border: 0px solid rgba(0, 0, 0, 0.1) !important;
+  // box-shadow: var(--ct-card-box-shadow);
+  box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+}
+.card-header {
+  background-color: var(--ct-body-sc-bg);
+  border-bottom: none;
+}
+.table-hover > tbody > tr:hover > * {
+  // --bs-table-accent-bg: var(--bs-table-hover-bg);
+  --bs-table-accent-bg: var(--ct-body-sc-bg);
+  color: var(--ct-color-font);
+}
+.alert-warning {
+  color: #997100;
+  background-color: #fff2cc;
+  border-color: #ffebb3;
+}
+
+.table > * > * {
+  border-bottom-width: 0px;
+}
+.table thead th {
+  border-bottom: 2px solid var(--bs-table-hover-bg);
+}
+.table-light {
+  --bs-table-bg: var(--ct-body-sc-bg);
+  color: var(--ct-color-font);
+}
+.table-centered td,
+.table-centered th {
+  vertical-align: middle !important;
+}
