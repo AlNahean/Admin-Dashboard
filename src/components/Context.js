@@ -15,7 +15,7 @@ const initialState = {
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(Reducer, initialState);
   const [test, setTest] = useState("Context Text");
-  const [showLeftNav, setShowLeftNav] = useState(false);
+  const [showLeftNav, setShowLeftNav] = useState(true);
   const [showTopNavDropdown, setShowTopNavDropdown] = useState({
     flags: false,
     nottification: false,
