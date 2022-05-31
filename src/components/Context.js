@@ -12,10 +12,19 @@ const initialState = {
   lastName: "Fardous",
 };
 
+const getNavStatus = () => {
+  let navStatus = localStorage.getItem("data-left-nav");
+  if (navStatus === "show") {
+    return true;
+  } else {
+    return false;
+  }
+};
+
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(Reducer, initialState);
   const [test, setTest] = useState("Context Text");
-  const [showLeftNav, setShowLeftNav] = useState(true);
+  const [showLeftNav, setShowLeftNav] = useState(getNavStatus());
   const [showTopNavDropdown, setShowTopNavDropdown] = useState({
     flags: false,
     nottification: false,

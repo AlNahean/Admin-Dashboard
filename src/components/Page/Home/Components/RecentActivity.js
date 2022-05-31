@@ -3,12 +3,12 @@ import RecentActivityData from "../../../Data/HomeRecentActivity";
 const RecentActivity = () => {
   // console.log(RecentActivityData);
   return (
-    <div className="card hm-recent-activity">
+    <div className="card hm-recent-activity ">
       <div className="card-header bg-primary text-white">
         <h5>Recent Activity</h5>
       </div>
       <div
-        className="card-body hm-recent-timeline-container"
+        className="card-body hm-recent-timeline-container custom-scrollbar-sm"
         style={{ minHeight: "450px", marginBottom: "10px" }}
       >
         <div className="timeline-dummy-item">

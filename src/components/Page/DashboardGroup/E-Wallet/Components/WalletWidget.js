@@ -6,29 +6,31 @@ import { Chart, registerables } from "chart.js";
 import { BsCurrencyBitcoin } from "react-icons/bs";
 import { FaLongArrowAltDown, FaLongArrowAltUp } from "react-icons/fa";
 Chart.register(...registerables); //vvi must do
-
-const ViewsPerMinuteChartData = [
-  {
-    id: 1,
-    views: (Math.random() * 100).toFixed(0),
-  },
-  {
-    id: 2,
-    views: (Math.random() * 100).toFixed(0),
-  },
-  {
-    id: 3,
-    views: (Math.random() * 100).toFixed(0),
-  },
-  {
-    id: 4,
-    views: (Math.random() * 100).toFixed(0),
-  },
-  {
-    id: 5,
-    views: (Math.random() * 100).toFixed(0),
-  },
-];
+const getViewsPerMinuteChartData = () => {
+  const ViewsPerMinuteChartData = [
+    {
+      id: 1,
+      views: (Math.random() * 100).toFixed(0),
+    },
+    {
+      id: 2,
+      views: (Math.random() * 100).toFixed(0),
+    },
+    {
+      id: 3,
+      views: (Math.random() * 100).toFixed(0),
+    },
+    {
+      id: 4,
+      views: (Math.random() * 100).toFixed(0),
+    },
+    {
+      id: 5,
+      views: (Math.random() * 100).toFixed(0),
+    },
+  ];
+  return ViewsPerMinuteChartData;
+};
 
 const WalletWidget = ({ item }) => {
   const tooltipline = {
@@ -67,7 +69,8 @@ const WalletWidget = ({ item }) => {
       return true;
     }
   };
-  const MakeBarChart = () => {
+  const MakeBarChart = async () => {
+    let ViewsPerMinuteChartData = await getViewsPerMinuteChartData();
     const ctx2 = document.getElementById(WalletWidgetId).getContext("2d");
     walletChart1 = new Chart(ctx2, {
       type: "bar",
@@ -159,7 +162,8 @@ const WalletWidget = ({ item }) => {
       },
     });
   };
-  const MakeLineChart = () => {
+  const MakeLineChart = async () => {
+    let ViewsPerMinuteChartData = await getViewsPerMinuteChartData();
     const ctx2 = document.getElementById(WalletWidgetId).getContext("2d");
     walletChart1 = new Chart(ctx2, {
       type: "line",
@@ -265,9 +269,9 @@ const WalletWidget = ({ item }) => {
   const makeChart = async () => {
     console.log(id);
     if (id === 2) {
-      MakeLineChart();
-    } else {
       MakeBarChart();
+    } else {
+      MakeLineChart();
     }
   };
 

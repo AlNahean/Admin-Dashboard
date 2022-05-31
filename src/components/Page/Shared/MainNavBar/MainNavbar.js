@@ -84,8 +84,18 @@ const MainNavbar = () => {
 
   useEffect(() => {
     // console.log(showLeftNav);
+    var element = document.getElementById("bodyH");
+
+    if (!showLeftNav) {
+      console.log(element);
+      element.setAttribute("data-left-nav", "hide");
+      localStorage.setItem("data-left-nav", "hide");
+    } else {
+      element.setAttribute("data-left-nav", "show");
+      localStorage.setItem("data-left-nav", "show");
+    }
     return () => {};
-  }, []);
+  }, [showLeftNav]);
 
   const getPosition = (e) => {
     let windowWidth = window.innerWidth;
@@ -170,6 +180,7 @@ const MainNavbar = () => {
               var element = document.getElementById("bodyH");
 
               if (showLeftNav) {
+                console.log(element);
                 element.setAttribute("data-left-nav", "hide");
               } else {
                 element.setAttribute("data-left-nav", "show");

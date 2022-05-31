@@ -384,5 +384,20 @@ body {
     color: #cecece !important;
   }
 }
+[data-left-nav="show"] {
+  .page-main {
+    width: calc(100% - 260px);
+  }
+
+  @media screen and (max-width: 992px) {
+    .page-main {
+      width: 100%;
+    }
+  }
+}
+
+[data-left-nav="hide"] {
+  width: 100%;
+}
 
 // dfSDLKghsdfailghsaalsghsdfljkghsdflgsfdlk

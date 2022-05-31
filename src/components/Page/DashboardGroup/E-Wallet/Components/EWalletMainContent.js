@@ -40,7 +40,10 @@ const WalletWidgetData = [
 
 const EWalletMainContent = () => {
   return (
-    <div className=" full-size dashboard-e-wallet" style={{ zIndex: "1" }}>
+    <div
+      className=" full-size dashboard-e-wallet page-main"
+      style={{ zIndex: "1" }}
+    >
       <div className=" main-content container-fluid w-100">
         <PageTitle title="E-Wallet" />
         <div className=" row">

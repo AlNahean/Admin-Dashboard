@@ -11,7 +11,7 @@ const BalanceStatusChartData = [];
 for (let i = 0; i < 100; i++) {
   if (i < 60) {
     BalanceStatusChartData.push({
-      number: getMultiplyPlus(i) + i * 10 + 10,
+      number: getMultiplyPlus(i) + i * 10 + 100,
       title: `Sprint ${i}`,
       id: i,
     });

@@ -50,7 +50,7 @@ const HomeWidgets1 = [
 const MainContent = () => {
   return (
     <>
-      <div className="dashboard-main full-size" style={{ zIndex: 1 }}>
+      <div className="dashboard-main full-size page-main" style={{ zIndex: 1 }}>
         <div
           // style={{ marginTop: "70px" }}
           className="main-content"

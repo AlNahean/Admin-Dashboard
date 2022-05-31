@@ -57,12 +57,12 @@ const TransactionList = () => {
       <div className=" card mb-3">
         {getCardHeader("Transaction List")}
         <div
-          className=" card-body"
+          className=" card-body custom-scrollbar-sm"
           style={{ maxHeight: "387px", minHeight: "387px", overflow: "auto" }}
         >
           <div className=" " style={{ maxWidth: "100%", overflow: "auto" }}>
             <table
-              className="table  table-hover text-muted table-nowrap table-centered"
+              className="table  table-hover text-muted table-nowrap table-centered "
               style={{
                 minWidth: "600px",
                 overflow: "auto",

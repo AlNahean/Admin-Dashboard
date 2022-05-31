@@ -76,7 +76,7 @@ const MyWatchlist = () => {
       <div className=" card mb-3 .box-h">
         {getCardHeader("My Watchlist")}
         <div
-          className=" card-body"
+          className=" card-body custom-scrollbar-sm"
           style={{ maxHeight: " 425px", overflow: "auto" }}
         >
           {/* sdsadasf */}

@@ -44,7 +44,10 @@ const TopWidgetData = [
 
 const ProjectsMainContent = () => {
   return (
-    <div className=" full-size dashboard-projects" style={{ zIndex: "1" }}>
+    <div
+      className=" full-size dashboard-projects page-main"
+      style={{ zIndex: "1" }}
+    >
       <div className=" main-content container-fluid w-100">
         <PageTitle title="Projects" />
         <div className=" row top-widgets">

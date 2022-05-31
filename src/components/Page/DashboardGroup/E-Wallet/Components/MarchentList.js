@@ -64,7 +64,7 @@ const MarchentList = () => {
       <div className=" card mb-3">
         {getCardHeader("Marchent List")}
         <div
-          className=" card-body"
+          className=" card-body custom-scrollbar-sm"
           style={{ maxHeight: "387px", minHeight: "387px", overflow: "auto" }}
         >
           {MarchentListData.map((item) => {

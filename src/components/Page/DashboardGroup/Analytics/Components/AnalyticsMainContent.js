@@ -39,7 +39,10 @@ const AnalyticsTileData = [
 const AnalyticsMainContent = () => {
   const getHeight = () => {};
   return (
-    <div className=" full-size dashboard-analytics" style={{ zIndex: 1 }}>
+    <div
+      className=" full-size dashboard-analytics page-main"
+      style={{ zIndex: 1 }}
+    >
       <div
         style={
           {
