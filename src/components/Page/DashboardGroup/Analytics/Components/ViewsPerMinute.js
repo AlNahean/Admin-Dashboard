@@ -77,7 +77,7 @@ const ViewsPerMinute = () => {
             data: ViewsPerMinuteChartData.map((item) => item.views),
             backgroundColor: ["#0ACF97"],
 
-            borderWidth: 4,
+            borderWidth: 0,
             borderColor: "#0ACF97",
             tension: 0.4,
           },
