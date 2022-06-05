@@ -695,7 +695,7 @@ const MainNavbar = () => {
               <Link to="/" className="account-user-info-container">
                 <span className="account-user-avatar">
                   <img
-                    src="./images/users/avatar-1.jpg"
+                    src="/images/users/avatar-1.jpg"
                     alt=""
                     // srcset=""
                     // style={{ height: "20px", width: "20px" }}

@@ -134,7 +134,7 @@ const AnalyticsMainContent = () => {
                       </span>
                     </h4>
                     <img
-                      src="./email-campaign.svg"
+                      src="/email-campaign.svg"
                       alt=""
                       className=" img-fluid"
                       style={{ height: "140px" }}

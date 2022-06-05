@@ -124,7 +124,7 @@ const FullLeftNav = () => {
               className="card-header bg-primary"
               style={{ height: "70px", textDecoration: "none" }}
             >
-              <img src="./images/logo/logo.png" alt="" />
+              <img src="/images/logo/logo.png" alt="" />
             </Link>
             <div className="card-body left-nav-item overflow-auto custom-scrollbar-sm">
               {/**********************************************************************************************************
