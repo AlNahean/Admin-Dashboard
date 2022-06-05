@@ -7,7 +7,8 @@ $primary: #727cf5;
 
 // Home Css Import
 
-@import url(../Page/Home/Home.scss);
+// @import url(../Page/Home/Home.scss);
+@import "../Page//Home/Home.scss"; // or ecommerse
 @import "../Page/DashboardGroup/Analytics/Styles/Analytics";
 @import "../Page/DashboardGroup/Projects/Styles/Projects";
 @import "../Page/DashboardGroup/E-Wallet/Styles/EWallet";
@@ -18,4 +19,7 @@ $primary: #727cf5;
 
 //boorstrap data
 @import "./boootstrap-edit";
+
+//custom css
 @import "./common-custom";
+@import "./custom";

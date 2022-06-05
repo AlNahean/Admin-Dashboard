@@ -5,36 +5,41 @@ import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Custom = ({
-  setShowPageNavCustom,
-  showPageNavCustom,
-  leftNavCustomData,
+  isHeader,
+  groupSectionHeader = "Group Section Title",
+  groupHeader = "Grpup Title",
+  showNavGroup,
+  setShowNavGroup,
+  leftNavData,
 }) => {
   return (
     <div>
-      <div className=" d-flex flex-column w-100 mt-4">
-        <h5>
-          <small>{"Custom".toUpperCase()}</small>
-        </h5>
+      <div className=" d-flex flex-column w-100 ">
+        {isHeader && (
+          <h5 className=" mt-4">
+            <small>{groupSectionHeader.toUpperCase()}</small>
+          </h5>
+        )}
         {/* NavGroupSwitcher----Dashboard */}
         <div
           className="card-section-grid collapse-header p-2"
           onClick={() => {
-            setShowPageNavCustom(!showPageNavCustom);
+            setShowNavGroup(!showNavGroup);
           }}
         >
           <div className="center" style={{ fontSize: "1.2rem" }}>
             <AiOutlineHome />
           </div>
-          <h5 className=" mb-0">Pages</h5>
+          <h5 className=" mb-0">{groupHeader}</h5>
           <span className=" center" style={{ fontSize: "1.6rem" }}>
             <MdOutlineKeyboardArrowRight />
           </span>
         </div>
 
         {/* NavGroupItems-- */}
-        {showPageNavCustom && (
+        {showNavGroup && (
           <ul className=" list-unstyled left-nav-collapse text-muted">
-            {leftNavCustomData.map((item) => {
+            {leftNavData.map((item) => {
               return (
                 <li className=" " key={item.id}>
                   <Link

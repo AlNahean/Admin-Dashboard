@@ -1,3 +1,7 @@
+//**********************************************************************************************
+//*****************************Default my custom ****************************************************
+//**********************************************************************************************
+
 :root {
 }
 //
@@ -84,9 +88,9 @@ body {
 }
 
 /* Start */
-@import url(../Shared/LeftNavBar/Styles/_left-navbar.scss);
-@import url(../Shared/MainNavBar/Styles/_main-navbar.scss);
-@import url(./Styles/_main-content.scss);
+@import "../Shared/LeftNavBar/Styles/_left-navbar.scss";
+@import "../Shared/MainNavBar/Styles/_main-navbar.scss";
+@import "./Styles/_main-content.scss";
 
 .main-wrapper {
   min-height: 100vh;
@@ -150,7 +154,7 @@ body {
   height: 75px;
 }
 
-@import url(./_hide-boxed.scss);
+@import "./_hide-boxed.scss";
 
 @mixin initBoxed {
   .settings-modal {
@@ -384,6 +388,7 @@ body {
     color: #cecece !important;
   }
 }
+// to fix the overflow issue
 [data-left-nav="show"] {
   .page-main {
     width: calc(100% - 260px);
@@ -396,8 +401,9 @@ body {
   }
 }
 
-[data-left-nav="hide"] {
-  width: 100%;
-}
+//
+// [data-left-nav="hide"] {
+//   width: 100%;
+// }
 
 // dfSDLKghsdfailghsaalsghsdfljkghsdflgsfdlk

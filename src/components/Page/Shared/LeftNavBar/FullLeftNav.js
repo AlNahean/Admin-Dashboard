@@ -53,59 +53,59 @@ let leftNavDashboardData = [
     isNew: true,
   },
 ];
-let leftNavCustomData = [
+let leftNavPageData = [
   {
     id: 1,
     title: "Profile",
-    link: "profile",
+    link: "page-group/profile",
     isNew: false,
   },
   {
     id: 2,
     title: "Profile 2",
-    link: "profile-2",
+    link: "page-group/profile-2",
     isNew: false,
   },
   {
     id: 3,
     title: "Invoice",
-    link: "invoice",
+    link: "page-group/invoice",
     isNew: false,
   },
   {
     id: 4,
     title: "FAQ",
-    link: "faq",
+    link: "page-group/faq",
     isNew: false,
   },
   {
     id: 5,
     title: "Pricing",
-    link: "pricing",
+    link: "page-group/pricing",
     isNew: false,
   },
   {
     id: 6,
     title: "Maintainance",
-    link: "maintainance",
+    link: "page-group/maintainance",
     isNew: false,
   },
   {
     id: 7,
     title: "Starter",
-    link: "starter",
+    link: "page-group/starter",
     isNew: false,
   },
   {
     id: 8,
     title: "Timeline",
-    link: "timeline",
+    link: "page-group/timeline",
     isNew: false,
   },
   {
     id: 9,
     title: "Landing",
-    link: "landing",
+    link: "page-group/landing",
     isNew: false,
   },
 ];
@@ -183,7 +183,14 @@ const FullLeftNav = () => {
               {/**********************************************************************************************************
                ***************************************Custom********************************************
                ***********************************************************************************************************/}
-              {/* <Custom /> */}
+              <Custom
+                isHeader={true}
+                groupSectionHeader={"Apps"}
+                groupHeader={"Pages"}
+                showNavGroup={showPageNavCustom}
+                setShowNavGroup={setShowPageNavCustom}
+                leftNavData={leftNavPageData}
+              />
             </div>
           </div>
         </div>
