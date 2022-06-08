@@ -20,36 +20,36 @@ import { useGlobalContext } from "../../../Context";
 const dropdownMoreMenuData = [
   {
     id: 1,
-    img: "./images/brands/dribbble.png",
+    img: "/images/brands/dribbble.png",
     title: "Dribble",
     link: "",
   },
   {
     id: 2,
-    img: "./images/brands/bitbucket.png",
+    img: "/images/brands/bitbucket.png",
     title: "Bitbucket",
     link: "",
   },
   {
     id: 3,
-    img: "./images/brands/g-suite.png",
+    img: "/images/brands/g-suite.png",
     title: "G-suite",
   },
   {
     id: 4,
-    img: "./images/brands/github.png",
+    img: "/images/brands/github.png",
     title: "Github",
     link: "",
   },
   {
     id: 5,
-    img: "./images/brands/dropbox.png",
+    img: "/images/brands/dropbox.png",
     title: "Dropbox",
     link: "",
   },
   {
     id: 6,
-    img: "./images/brands/slack.png",
+    img: "/images/brands/slack.png",
     title: "Slack",
     link: "",
   },

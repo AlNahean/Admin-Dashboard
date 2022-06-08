@@ -12,6 +12,8 @@ import { FaUserFriends } from "react-icons/fa";
 import { BsFillCartPlusFill } from "react-icons/bs";
 import { BiDollar, BiPulse } from "react-icons/bi";
 import PageTitle from "./PageTitle";
+
+//data
 const HomeWidgets1 = [
   {
     id: 1,

@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "../../Shared/NavBar/Navbar";
-import ProfileMainContent from "./Components/ProfileMainContent";
+import FAQMainContent from "./Components/FAQMainContent";
 
-const Profile = () => {
+const FAQ = () => {
   return (
     <div className=" main-wrapper">
       <Navbar />
-      <ProfileMainContent />
+      <FAQMainContent />
     </div>
   );
 };
 
-export default Profile;
+export default FAQ;

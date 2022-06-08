@@ -13,6 +13,9 @@ $primary: #727cf5;
 @import "../Page/DashboardGroup/Projects/Styles/Projects";
 @import "../Page/DashboardGroup/E-Wallet/Styles/EWallet";
 
+//PAges Group
+@import "../Page/PagesGroup/Invoice/Styles/invoice.scss";
+
 .na {
   background-color: black;
 }

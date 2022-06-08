@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "../../Shared/NavBar/Navbar";
-import ProfileMainContent from "./Components/ProfileMainContent";
+import TimelineMainContent from "./Components/TimelineMainContent";
 
-const Profile = () => {
+const Timeline = () => {
   return (
     <div className=" main-wrapper">
       <Navbar />
-      <ProfileMainContent />
+      <TimelineMainContent />
     </div>
   );
 };
 
-export default Profile;
+export default Timeline;

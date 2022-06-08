@@ -6,7 +6,20 @@ body {
   background-color: #fff;
   background-color: var(--ct-body-sc-bg) !important;
   border: 1px solid var(--ct-body-sc-bg) !important;
-  color: var(--ct-color-font);
+  color: var(--ct-color-font) !important;
+  box-shadow: none;
+
+  outline: 0;
+  // -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+  //   0 0 8px rgba(102, 175, 233, 0.6);
+  // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+  //   0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control:focus {
+  outline: 0;
+  border-color: #ff0000;
+  // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  // box-shadow: none !important;
 }
 .card {
   border: 0px solid rgba(0, 0, 0, 0.1) !important;

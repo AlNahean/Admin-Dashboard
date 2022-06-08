@@ -96,12 +96,12 @@ let leftNavPageData = [
     link: "page-group/starter",
     isNew: false,
   },
-  {
-    id: 8,
-    title: "Timeline",
-    link: "page-group/timeline",
-    isNew: false,
-  },
+  // {
+  //   id: 8,
+  //   title: "Timeline",
+  //   link: "page-group/timeline",
+  //   isNew: false,
+  // },
   {
     id: 9,
     title: "Landing",
@@ -109,10 +109,61 @@ let leftNavPageData = [
     isNew: false,
   },
 ];
+let leftNavEcommerseData = [
+  {
+    id: 1,
+    title: "Products",
+    link: "ecommerse-group/products",
+    isNew: false,
+  },
+  {
+    id: 2,
+    title: "Product Details",
+    link: "ecommerse-group/product-details",
+    isNew: false,
+  },
+  {
+    id: 3,
+    title: "Orders",
+    link: "ecommerse-group/orders",
+    isNew: false,
+  },
+  {
+    id: 4,
+    title: "Order Details",
+    link: "ecommerse-group/order-details",
+    isNew: false,
+  },
+  {
+    id: 5,
+    title: "Customers",
+    link: "ecommerse-group/customers",
+    isNew: false,
+  },
+  {
+    id: 6,
+    title: "Shoping Cart",
+    link: "ecommerse-group/shoping-cart",
+    isNew: false,
+  },
+  {
+    id: 7,
+    title: "Checkout",
+    link: "ecommerse-group/checkout",
+    isNew: false,
+  },
+  {
+    id: 8,
+    title: "Sellers",
+    link: "ecommerse-group/sellers",
+    isNew: false,
+  },
+];
 
 const FullLeftNav = () => {
   const [showPageNavDashboard, setShowPageNavDashboard] = useState(true);
-  const [showPageNavCustom, setShowPageNavCustom] = useState(true);
+  const [showPageNavPages, setShowPageNavPages] = useState(true);
+  const [showPageNavEcommerse, setShowPageNavEcommerse] = useState(true);
   return (
     <>
       <div className="dummy-left-nav">
@@ -187,10 +238,18 @@ const FullLeftNav = () => {
                 isHeader={true}
                 groupSectionHeader={"Apps"}
                 groupHeader={"Pages"}
-                showNavGroup={showPageNavCustom}
-                setShowNavGroup={setShowPageNavCustom}
+                showNavGroup={showPageNavPages}
+                setShowNavGroup={setShowPageNavPages}
                 leftNavData={leftNavPageData}
               />
+              {/* <Custom
+                isHeader={false}
+                groupSectionHeader={"Apps"}
+                groupHeader={"Ecommerse"}
+                showNavGroup={showPageNavEcommerse}
+                setShowNavGroup={setShowPageNavEcommerse}
+                leftNavData={leftNavEcommerseData}
+              /> */}
             </div>
           </div>
         </div>

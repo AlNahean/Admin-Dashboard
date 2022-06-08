@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "../../Shared/NavBar/Navbar";
-import ProfileMainContent from "./Components/ProfileMainContent";
+import PricingMainContent from "./Components/PricingMainContent";
 
-const Profile = () => {
+const Pricing = () => {
   return (
     <div className=" main-wrapper">
       <Navbar />
-      <ProfileMainContent />
+      <PricingMainContent />
     </div>
   );
 };
 
-export default Profile;
+export default Pricing;
