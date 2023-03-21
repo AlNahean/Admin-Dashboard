@@ -126,8 +126,10 @@ const PageTitle = ({ title = "Dashboard" }) => {
                 style={{
                   height: "100%",
                   width: "100%",
+                  marginTop: "32px",
                   backgroundColor: "red",
                   scale: "1.3",
+                  zIndex: "-1"
                 }}
               >
                 <Calendar onChange={setValue} value={value} />

@@ -32,7 +32,7 @@ const AppProvider = ({ children }) => {
   });
   const [showSettings, setShowSettings] = useState(false);
   const [boxCustomize, setBoxCustomize] = useState(false);
-  const [isDarkMode, setISDarkmode] = useState(false);
+  const [isDarkMode, setISDarkmode] = useState(true);
 
   // console.log(test);
   //sasasas
